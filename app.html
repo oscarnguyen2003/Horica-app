@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+	var linebreak = "<br>";
+	var order
+	var add
+		function welkdrankje(){
+
+			order = prompt("Wat voor drinken wilt u toevoegen. U kunt kiezen uit Fris is 1 euro Bier is 3 euro en Wijn is 5 euro vul snack in als u wat bitterballen wilt bemachtigen. Voer stop in om af te rekenen. ")
+
+			if(order == "fris" ){
+			var aantalfris = prompt("Hoeveel fris wilt u hebben?")
+			var prijsfris = aantalfris * 1
+			document.write("Kosten fris 1 euro per stuk= " + prijsfris + " euro")
+			document.write(linebreak)
+			welkdrankje();
+
+
+			}
+			else if(order == "bier"){
+			var aantalbier = prompt("Hoeveel bier wilt u hebben?")	
+			var prijsbier = aantalbier * 3
+			document.write("kosten bier 3 euro per stuk= " + prijsbier + " euro")
+			document.write(linebreak)
+			welkdrankje();
+
+			
+			}
+			else if(order == "wijn"){
+			var aantalwijn = prompt("Hoeveel wijn wilt u hebben?")
+			var prijswijn = aantalwijn * 5
+			document.write("Kosten wijn 5 euro per stuk= " + prijswijn + " euro")
+			document.write(linebreak)
+			welkdrankje();
+
+		}
+
+			else if(order == "stop"){
+
+
+
+         	 var totaalprijs = aantalfris + aantalbier + aantalwijn + aantalbitterballen
+              document.write("Uw totaalbedrag is " + totaalbedrag + "euro")
+
+			}
+
+
+			
+					else if(order == "snack"){
+						bitterballen();
+					}
+			
+			else{
+				alert("Dit is geen geldige optie")
+				welkdrankje();
+			}
+
+
+			}	
+			welkdrankje();
+
+
+			function bitterballen(){
+			aantalbitterballen = prompt("Wilt u daar nog bitterballen bij? 1 portie bitterballen is 5 euro per 10 bitterballen")
+			var aantalbitterballen
+			var bitterbalprijs = aantalbitterballen * 5
+			document.write("Bitterballenprijs 5euro per 10 stuks = " + Bitterballenprijs + " euro");
+
+			welkdrankje();
+
+
+		}
+
+
+
+
+
+ </script>
+</html>
